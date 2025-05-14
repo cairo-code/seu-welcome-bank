@@ -318,6 +318,29 @@ const LoginPage = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
                 >
+                  <motion.div
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className="mb-6 text-center"
+                  >
+                    <motion.h3
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.4 }}
+                      className="text-2xl sm:text-3xl font-bold text-green-500 mb-2 matrix-text"
+                    >
+                      Nice try!
+                    </motion.h3>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.6 }}
+                      className="text-lg text-green-400"
+                    >
+                      but we are not done yet...
+                    </motion.p>
+                  </motion.div>
                   <div className="mb-6">
                     <img src={firstImage} alt="Find the flag" className="w-full h-auto rounded-lg mb-4" />
                   </div>
