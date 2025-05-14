@@ -1,0 +1,49 @@
+Welcome Bank CTF Challenge - Solution Guide
+=========================================
+
+Challenge: Find the hidden flag in the bank's secure system
+
+Hints and Solution Steps:
+------------------------
+
+1. Initial Investigation:
+   - Notice the hint: "Even robots need to know where to look"
+   - Check the robots.txt file for hidden messages
+   - Look for encoded credentials in the comments
+
+2. Finding the Credentials:
+   a. Account Number:
+      - Found in robots.txt as ROT13: 13371337
+      - Also encoded in binary
+      - This is your account number
+
+   b. Vault Key:
+      - Found in robots.txt as ROT13: URK_VF_ZNTVP
+      - Decodes to: HEX_IS_MAGIC
+      - This is your vault key
+
+3. Login Process:
+   - Enter the account number: 13371337
+   - Enter the vault key: HEX_IS_MAGIC
+   - Click "Access Vault" to proceed
+
+4. Claiming the Prize:
+   - After successful login, you'll see the prize form
+   - Enter your real name
+   - Submit to claim your prize
+   - The flag will be displayed: CTF{HEX_IS_MAGIC}
+
+Additional Notes:
+----------------
+- The challenge combines multiple encoding methods:
+  * ROT13 encoding
+  * Binary encoding
+  * ASCII encoding
+  * Pattern recognition
+
+- The solution requires:
+  * Basic knowledge of encoding methods
+  * Attention to detail
+  * Pattern recognition skills
+
+Remember: The best security is sometimes hidden in plain sight! 

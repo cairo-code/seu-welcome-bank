@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin
+Disallow: /internal
+Disallow: /secret
+
+# HINT: The vault combination is hidden in plain sight
+# Look for patterns in the matrix
+# The key to success lies in the shadows
+# Follow the green path to enlightenment
+# Remember: "The truth is out there" - X-Files
+
+# Flag: SEU{Y0u_@r3_@_G00d_H4ck3r}
+
