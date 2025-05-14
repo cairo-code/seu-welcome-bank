@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { User, Send, Trophy, CheckCircle, Shield, AlertCircle } from 'lucide-react';
 import axios from 'axios';
 
-const MEME_URL = '../src/assets/2.jpeg'; // Example meme image
+const MEME_URL = '../assets/2.jpeg'; // Example meme image
 
 const PrizeForm = ({ onComplete }) => {
   const [realName, setRealName] = useState('');
